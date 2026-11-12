@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9585.61 13695.5708">
+<defs><g id="spacing-source">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
+        fill: #fff;
+      }
+
+      .cls-4, .cls-5, .cls-8, .cls-11 {
+        font-size: 10px;
+      }
+
+      .cls-4, .cls-6 {
+        font-family: Avenir-Book, Avenir;
+      }
+
+      .cls-12, .cls-13, .cls-14, .cls-15, .cls-8, .cls-9, .cls-16 {
+        font-weight: 800;
+      }
+
+      .cls-12, .cls-13, .cls-15, .cls-8 {
+        font-family: Avenir-Heavy, Avenir;
+      }
+
+      .cls-2 {
+        stroke-width: 10px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6 {
+        font-size: 9.5px;
+      }
+
+      .cls-3 {
+        stroke-width: 4px;
+      }
+
+      .cls-17 {
+        fill: url(#_新建渐变色板_3);
+      }
+
+      .cls-18 {
+        fill: url(#_未命名的渐变_120);
+      }
+
+      .cls-13, .cls-19, .cls-14, .cls-20, .cls-21 {
+        fill: #0a6562;
+      }
+
+      .cls-13, .cls-10, .cls-21 {
+        font-size: 14px;
+      }
+
+      .cls-22 {
+        letter-spacing: 1.11em;
+      }
+
+      .cls-23 {
+        isolation: isolate;
+      }
+
+      .cls-24 {
+        letter-spacing: .41em;
+      }
+
+      .cls-25 {
+        letter-spacing: .35em;
+      }
+
+      .cls-26 {
+        letter-spacing: .35em;
+      }
+
+      .cls-27 {
+        letter-spacing: .24em;
+      }
+
+      .cls-28 {
+        letter-spacing: .25em;
+      }
+
+      .cls-29 {
+        letter-spacing: .28em;
+      }
+
+      .cls-30 {
+        letter-spacing: .27em;
+      }
+
+      .cls-31 {
+        letter-spacing: .27em;
+      }
+
+      .cls-32 {
+        letter-spacing: .24em;
+      }
+
+      .cls-33 {
+        letter-spacing: .24em;
+      }
+
+      .cls-34 {
+        letter-spacing: .25em;
+      }
+
+      .cls-35 {
+        letter-spacing: .73em;
+      }
+
+      .cls-36 {
+        letter-spacing: .53em;
+      }
+
+      .cls-37 {
+        letter-spacing: .53em;
+      }
+
+      .cls-19 {
+        font-size: 16px;
+      }
+
+      .cls-19, .cls-10, .cls-11 {
+        font-weight: 500;
+      }
+
+      .cls-19, .cls-11 {
+        font-family: Avenir-Medium, Avenir;
+      }
+
+      .cls-38 {
+        letter-spacing: .47em;
+      }
+
+      .cls-39 {
+        letter-spacing: .47em;
+      }
+
+      .cls-40 {
+        letter-spacing: .46em;
+      }
+
+      .cls-14, .cls-9 {
+        font-family: Avenir-Black, Avenir;
+      }
+
+      .cls-14, .cls-9, .cls-16 {
+        font-size: 36px;
+      }
+
+      .cls-41 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-42 {
+        letter-spacing: .2em;
+      }
+
+      .cls-43 {
+        letter-spacing: .21em;
+      }
+
+      .cls-44 {
+        letter-spacing: .21em;
+      }
+
+      .cls-45 {
+        letter-spacing: .15em;
+      }
+
+      .cls-46 {
+        letter-spacing: .15em;
+      }
+
+      .cls-47 {
+        letter-spacing: .17em;
+      }
+
+      .cls-48 {
+        letter-spacing: .17em;
+      }
+
+      .cls-49 {
+        letter-spacing: .13em;
+      }
+
+      .cls-50 {
+        letter-spacing: .13em;
+      }
+
+      .cls-51 {
+        letter-spacing: .15em;
+      }
+
+      .cls-52 {
+        letter-spacing: .16em;
+      }
+
+      .cls-53 {
+        letter-spacing: .16em;
+      }
+
+      .cls-54 {
+        letter-spacing: .16em;
+      }
+
+      .cls-55 {
+        letter-spacing: .16em;
+      }
+
+      .cls-56 {
+        letter-spacing: .16em;
+      }
+
+      .cls-57 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-58 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-59 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-60 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-61 {
+        letter-spacing: 0em;
+      }
+
+      .cls-62, .cls-11 {
+        fill: #231815;
+      }
+
+      .cls-63 {
+        letter-spacing: 0em;
+      }
+
+      .cls-64 {
+        letter-spacing: 0em;
+      }
+
+      .cls-65 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15, .cls-66 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-67 {
+        letter-spacing: 0em;
+      }
+
+      .cls-68 {
+        letter-spacing: 0em;
+      }
+
+      .cls-69 {
+        font-family: Avenir-Roman, Avenir;
+      }
+
+      .cls-10 {
+        font-family: Avenir-MediumOblique, Avenir;
+      }
+
+      .cls-10, .cls-16 {
+        font-style: oblique;
+      }
+
+      .cls-70 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-71 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-72 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-73 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-74 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-75 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-76 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-77 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-78 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-79 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-80 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-81 {
+        letter-spacing: -.11em;
+      }
+
+      .cls-82 {
+        letter-spacing: -.11em;
+      }
+
+      .cls-83 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-84 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-85 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-86 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-87 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-88 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-89 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-90 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-91 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-92 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-93 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-94 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-95 {
+        fill: #a47442;
+        font-family: DMSerifDisplay-Regular, 'DM Serif Display';
+        font-size: 17px;
+      }
+
+      .cls-96 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-97 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-98 {
+        letter-spacing: 0em;
+      }
+
+      .cls-99 {
+        letter-spacing: 0em;
+      }
+
+      .cls-100 {
+        letter-spacing: 0em;
+      }
+
+      .cls-101 {
+        letter-spacing: 0em;
+      }
+
+      .cls-16 {
+        font-family: Avenir-HeavyOblique, Avenir;
+      }
+
+      .cls-102 {
+        letter-spacing: 0em;
+      }
+
+      .cls-103 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-104 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-105 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-106 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-107 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-108 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-109 {
+        letter-spacing: 0em;
+      }
+
+      .cls-110 {
+        letter-spacing: 0em;
+      }
+
+      .cls-111 {
+        letter-spacing: 0em;
+      }
+
+      .cls-112 {
+        letter-spacing: 0em;
+      }
+
+      .cls-113 {
+        letter-spacing: 0em;
+      }
+
+      .cls-114 {
+        letter-spacing: .1em;
+      }
+
+      .cls-115 {
+        letter-spacing: .1em;
+      }
+
+      .cls-116 {
+        letter-spacing: .07em;
+      }
+
+      .cls-117 {
+        letter-spacing: .07em;
+      }
+
+      .cls-118 {
+        letter-spacing: .07em;
+      }
+
+      .cls-119 {
+        letter-spacing: .12em;
+      }
+
+      .cls-120 {
+        letter-spacing: .12em;
+      }
+
+      .cls-121 {
+        letter-spacing: .02em;
+      }
+
+      .cls-122 {
+        letter-spacing: .02em;
+      }
+
+      .cls-123 {
+        letter-spacing: .02em;
+      }
+
+      .cls-124 {
+        letter-spacing: .02em;
+      }
+
+      .cls-125 {
+        letter-spacing: .02em;
+      }
+
+      .cls-126 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-127 {
+        letter-spacing: .01em;
+      }
+
+      .cls-128 {
+        letter-spacing: .02em;
+      }
+
+      .cls-129 {
+        letter-spacing: .02em;
+      }
+
+      .cls-130 {
+        letter-spacing: .05em;
+      }
+
+      .cls-131 {
+        letter-spacing: .05em;
+      }
+
+      .cls-132 {
+        letter-spacing: .04em;
+      }
+
+      .cls-133 {
+        letter-spacing: .03em;
+      }
+
+      .cls-134 {
+        letter-spacing: .03em;
+      }
+
+      .cls-135 {
+        letter-spacing: .03em;
+      }
+
+      .cls-136 {
+        letter-spacing: 0em;
+      }
+
+      .cls-137 {
+        letter-spacing: 0em;
+      }
+
+      .cls-138 {
+        letter-spacing: 0em;
+      }
+
+      .cls-139 {
+        letter-spacing: 0em;
+      }
+
+      .cls-140 {
+        letter-spacing: .01em;
+      }
+
+      .cls-141 {
+        letter-spacing: .01em;
+      }
+
+      .cls-142 {
+        letter-spacing: .01em;
+      }
+
+      .cls-143 {
+        letter-spacing: .01em;
+      }
+
+      .cls-144 {
+        letter-spacing: .01em;
+      }
+
+      .cls-145 {
+        letter-spacing: .01em;
+      }
+
+      .cls-146 {
+        letter-spacing: .01em;
+      }
+
+      .cls-147 {
+        letter-spacing: .01em;
+      }
+    </style>
+    <linearGradient id="_未命名的渐变_120" data-name="未命名的渐变 120" x1="4925.24" y1="5030.07" x2="4925.24" y2="3470.66" gradientTransform="translate(0 10014.63) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c6c1bd" />
+      <stop offset="1" stop-color="#6e6e6e" stop-opacity=".5" />
+    </linearGradient>
+    <clipPath id="clippath">
+      <polygon class="cls-1" points="3542.21 2577.54 3219.91 2577.54 3219.91 2255.34 3542.21 2577.54" />
+    </clipPath>
+    <clipPath id="clippath-1">
+      <polygon class="cls-1" points="3886.62 2571.16 3564.32 2571.16 3564.32 2248.96 3886.62 2571.16" />
+    </clipPath>
+    <clipPath id="clippath-2">
+      <polygon class="cls-1" points="4223.61 2571.16 3901.31 2571.16 3901.31 2248.96 4223.61 2571.16" />
+    </clipPath>
+    <linearGradient id="_新建渐变色板_3" data-name="新建渐变色板 3" x1="4082.05" y1="7321.77" x2="4082.05" y2="7937.57" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c6c1bd" />
+      <stop offset="1" stop-color="#6e6e6e" stop-opacity=".5" />
+    </linearGradient>
+    <clipPath id="clippath-3">
+      <polyline class="cls-1" points="3879.02 6755.62 4075.37 6755.62 4285.02 6965.15 4285.02 7025.72 3879.02 7025.72 3879.02 6755.62" />
+    </clipPath>
+    <clipPath id="clippath-4">
+      <polyline class="cls-1" points="3879.02 7025.72 4075.37 7025.72 4285.02 7235.25 4285.02 7295.82 3879.02 7295.82 3879.02 7025.72" />
+    </clipPath>
+  </defs>
+  <g class="cls-23">
+    <g id="content">
+      <rect class="cls-18" x="3879.21" y="4984.56" width="2092.06" height="1559.41" />
+      <line class="cls-3" x1="3752.81" y1="2142.36" x2="4084.57" y2="2142.36" />
+      <line class="cls-3" x1="3877.78" y1="2799.32" x2="4209.54" y2="2799.32" />
+      <line class="cls-3" x1="3397.74" y1="3649.22" x2="3762.24" y2="3649.22" />
+      <line class="cls-3" x1="4321.67" y1="6075.39" x2="4728.17" y2="6075.39" />
+      <line class="cls-3" x1="4074.57" y1="6752.1" x2="4481.06" y2="6752.1" />
+      <g>
+      </g>
+      <g>
+      </g>
+      <rect width="1312" height="1199" transform="translate(4774.67 9713.8) scale(.21)" style="fill: white; mix-blend-mode: normal;" />
+      <rect width="1312" height="1199" transform="translate(4854.21 10317.31) scale(.23)" style="fill: white; mix-blend-mode: normal;" />
+      <rect width="1312" height="1199" transform="translate(4337.19 10041.57) scale(.23)" style="fill: white; mix-blend-mode: normal;" />
+      <rect width="1536" height="1024" transform="translate(4767.98 10994.45) scale(.23)" style="fill: white; mix-blend-mode: normal;" />
+      <rect width="1312" height="1199" transform="translate(4318.34 10662.37) scale(.23)" style="fill: white; mix-blend-mode: normal;" />
+      <g>
+      </g>
+      <rect class="cls-7" x="3921.1" y="6927.58" width="9" height="148.38" transform="translate(1750.42 14728.58) rotate(-135)" />
+      <polygon class="cls-7" points="3858.9 6808.04 3865.26 6801.68 4278.67 7215.08 4278.43 7227.78 3858.9 6808.04" />
+      <rect class="cls-7" x="3879.24" y="7332.91" width="405.63" height="615.8" />
+      <g>
+        <g class="cls-126">
+          <rect width="550" height="631" transform="translate(3147.71 2249.89) scale(.72)" class="cls-23" style="fill: white; mix-blend-mode: normal;" />
+        </g>
+        <g>
+        </g>
+        <g class="cls-57">
+          <rect width="1700" height="1133" transform="translate(3437.32 2248.96) scale(.38)" style="fill: white; mix-blend-mode: normal;" />
+        </g>
+        <g class="cls-60">
+          <rect width="1440" height="1798" transform="translate(3899.61 2245.7) scale(.23)" style="fill: white; mix-blend-mode: normal;" />
+        </g>
+        <g>
+        </g>
+      </g>
+      <rect width="706" height="569" transform="translate(3464.32 2922.34) scale(.88)" style="fill: white; mix-blend-mode: normal;" />
+      <g>
+      </g>
+      <rect width="366" height="366" transform="translate(4085.88 4119.88) scale(.59)" style="fill: white; mix-blend-mode: normal;" />
+      <rect width="700" height="1068" transform="translate(3878.53 7333.37) scale(.58)" style="fill: white; mix-blend-mode: normal;" />
+      <rect class="cls-17" x="3879.24" y="7321.77" width="405.63" height="615.8" />
+      <g class="cls-58">
+        <rect width="1434" height="954" transform="translate(3879.02 6755.62) scale(.28)" style="fill: white; mix-blend-mode: normal;" />
+      </g>
+      <g class="cls-59">
+        <rect width="550" height="367" transform="translate(3872.55 7051.11) scale(.74)" style="fill: white; mix-blend-mode: normal;" />
+      </g>
+      <g>
+      </g>
+      <rect width="640" height="2284" transform="translate(3897.1 4094.16) scale(.27)" style="fill: white; mix-blend-mode: normal;" />
+      <rect width="1000" height="871" transform="translate(3397.3 3683.88) scale(.46)" style="fill: white; mix-blend-mode: normal;" />
+      <rect width="965" height="965" transform="translate(4086.17 4351.83) scale(.22)" style="fill: white; mix-blend-mode: normal;" />
+      <rect width="560" height="560" transform="translate(4084.64 4579.46) scale(.39)" style="fill: white; mix-blend-mode: normal;" />
+    </g>
+  </g>
+</g>
+<clipPath id="spacing-band-0"><rect x="0" y="0" width="9585.61" height="1754.08"/></clipPath>
+<clipPath id="spacing-band-1"><rect x="0" y="1754.08" width="9585.61" height="189.85"/></clipPath>
+<clipPath id="spacing-band-2"><rect x="0" y="1943.93" width="9585.61" height="775.19"/></clipPath>
+<clipPath id="spacing-band-3"><rect x="0" y="2719.12" width="9585.61" height="1.57"/></clipPath>
+<clipPath id="spacing-band-4"><rect x="0" y="2720.69" width="9585.61" height="2193.72"/></clipPath>
+<clipPath id="spacing-band-5"><rect x="0" y="4914.41" width="9585.61" height="105.95"/></clipPath>
+<clipPath id="spacing-band-6"><rect x="0" y="5020.36" width="9585.61" height="588.43"/></clipPath>
+<clipPath id="spacing-band-7"><rect x="0" y="5608.79" width="9585.61" height="298.34"/></clipPath>
+<clipPath id="spacing-band-8"><rect x="0" y="5907.13" width="9585.61" height="643.48"/></clipPath>
+<clipPath id="spacing-band-9"><rect x="0" y="6550.61" width="9585.61" height="63.13"/></clipPath>
+<clipPath id="spacing-band-10"><rect x="0" y="6613.74" width="9585.61" height="1946.08"/></clipPath>
+<clipPath id="spacing-band-11"><rect x="0" y="8559.82" width="9585.61" height="201.05"/></clipPath>
+<clipPath id="spacing-band-12"><rect x="0" y="8760.87" width="9585.61" height="708.76"/></clipPath>
+<clipPath id="spacing-band-13"><rect x="0" y="9469.63" width="9585.61" height="158.18"/></clipPath>
+<clipPath id="spacing-band-14"><rect x="0" y="9627.81" width="9585.61" height="3619.81"/></clipPath></defs>
+<g transform="matrix(1 0 0 1 0 0)"><g clip-path="url(#spacing-band-0)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1.44 0 -771.7952)"><g clip-path="url(#spacing-band-1)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1 0 83.534)"><g clip-path="url(#spacing-band-2)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1.44 0 -1112.8788)"><g clip-path="url(#spacing-band-3)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1 0 84.2248)"><g clip-path="url(#spacing-band-4)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1.44 0 -2078.1156)"><g clip-path="url(#spacing-band-5)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1 0 130.8428)"><g clip-path="url(#spacing-band-6)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1.44 0 -2337.0248)"><g clip-path="url(#spacing-band-7)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1 0 262.1124)"><g clip-path="url(#spacing-band-8)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1.44 0 -2620.156)"><g clip-path="url(#spacing-band-9)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1 0 289.8896)"><g clip-path="url(#spacing-band-10)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1.44 0 -3476.4312)"><g clip-path="url(#spacing-band-11)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1 0 378.3516)"><g clip-path="url(#spacing-band-12)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1.44 0 -3788.2856)"><g clip-path="url(#spacing-band-13)"><use href="#spacing-source"/></g></g>
+<g transform="matrix(1 0 0 1 0 447.9508)"><g clip-path="url(#spacing-band-14)"><use href="#spacing-source"/></g></g>
+<g transform="translate(0 622.3896)">
+      <line class="cls-3" x1="2946.68" y1="8284.41" x2="3357.76" y2="8284.41" />
+      <polygon class="cls-7" points="3537.03 8215.04 2874.14 8215.04 2874.14 7788.94 3108.83 7788.94 3537.03 8215.04" />
+      <line class="cls-2" x1="3537.26" y1="8208.04" x2="2873.13" y2="8208.04" />
+      <rect width="2145" height="2624" transform="translate(2873.13 7840.07) scale(.14)" style="fill: white; mix-blend-mode: normal;" />
+</g>
+</svg>

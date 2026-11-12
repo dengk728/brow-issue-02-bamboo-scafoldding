@@ -1,0 +1,469 @@
+*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;background:#c6c1bd;color:#262823;font-family:Avenir,sans-serif}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:2px solid #3d5141;outline-offset:5px}button:disabled{opacity:.3;cursor:default}#viewport{position:absolute;inset:0;overflow:hidden;touch-action:none;cursor:grab}#viewport.dragging{cursor:grabbing}#world{position:absolute;width:9585.61px;height:13695.5708px;transform-origin:0 0;will-change:transform}.layer{position:absolute;inset:0;width:100%;height:100%;user-select:none;pointer-events:none}.layer svg{display:block;width:100%;height:100%;overflow:visible}#content text{user-select:text}header,footer{position:fixed;left:32px;right:32px;display:flex;align-items:center;justify-content:space-between;gap:20px;z-index:2}header{top:25px}header a{font-size:18px;font-weight:700;letter-spacing:2px;text-decoration:none;color:inherit}header a span{font-weight:400}.edition{font-size:10px;letter-spacing:2px;margin-right:auto;margin-left:26px}button{background:#e6e2dbd9;border:1px solid #77786b55;border-radius:0;padding:10px 14px;backdrop-filter:blur(10px)}#overview{font-size:11px;letter-spacing:1px}footer{bottom:22px;font-size:11px}footer>div{display:flex;align-items:center;gap:20px}#number{font-variant-numeric:tabular-nums;letter-spacing:2px}#title{border-left:1px solid #77786b;padding-left:20px}#hint{font-size:10px;letter-spacing:1px}footer nav{display:flex;gap:5px}footer button{font-size:18px;width:43px;padding:7px}#index{position:fixed;left:32px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:9px;z-index:2}#index button{border:0;background:transparent;padding:4px;display:flex;align-items:center;gap:10px;font-size:9px;letter-spacing:1px;backdrop-filter:none}#index button:before{content:'';width:5px;height:5px;border:1px solid #62685b;border-radius:50%}#index button[aria-current=true]:before{background:#344b3d}#index button span{opacity:0;transition:opacity .2s}#index:hover button span,#index:focus-within button span,#index button[aria-current=true] span{opacity:1}.region{position:absolute;border:1px solid #435743;background:#4357430a;padding:0;display:none;font-size:22px;text-align:left;align-items:flex-start;justify-content:flex-start}.map-mode .region,.debug .region{display:flex}.region span{background:#e6e2db;padding:15px;white-space:nowrap}.region[aria-current=true]{border:5px solid #435743}#loading{position:fixed;inset:0;background:#c6c1bd;display:grid;place-items:center;font-size:12px;letter-spacing:3px;z-index:5}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}@media(max-width:650px){header,footer{left:18px;right:18px}.edition,#hint{display:none}#index{left:12px}#index button span{display:none}footer>div{gap:9px}#title{padding-left:9px;max-width:145px}footer nav{gap:3px}footer button{width:34px}}
+#content text{pointer-events:auto;cursor:text}
+.artwork-layer{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.html-copy{position:absolute;inset:0}.map-copy{position:absolute;left:0;top:0;transform-origin:0 0;font-family:Avenir,'Avenir Next',Arial,sans-serif;background:none;border:0;pointer-events:none}.copy-line{position:absolute;white-space:pre;pointer-events:auto;user-select:text;cursor:text;background:none}.body-copy{font-size:10pt!important;line-height:11pt!important;font-weight:400!important}
+/* Section hit areas stay invisible in the overview. */
+.map-mode .region,.map-mode .region[aria-current=true],.map-mode .region:hover{border:0;background:transparent;backdrop-filter:none}.map-mode .region span{display:none}.flow-copy{pointer-events:auto;user-select:text;cursor:text;white-space:normal}.flow-copy p{margin:0 0 11pt;line-height:11pt;font-size:10pt}
+html,body,#viewport{overflow:clip}
+@font-face{font-family:Avenir;src:url('assets/fonts/Avenir-Light.otf') format('opentype');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:Avenir;src:url('assets/fonts/Avenir-LightOblique.otf') format('opentype');font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:Avenir;src:url('assets/fonts/Avenir-Book.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Avenir;src:url('assets/fonts/Avenir-BookOblique.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:Avenir;src:url('assets/fonts/Avenir-Medium.otf') format('opentype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:Avenir;src:url('assets/fonts/Avenir-MediumOblique.otf') format('opentype');font-weight:500;font-style:italic;font-display:swap}
+@font-face{font-family:Avenir;src:url('assets/fonts/Avenir-Heavy.otf') format('opentype');font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:Avenir;src:url('assets/fonts/Avenir-HeavyOblique.otf') format('opentype');font-weight:800;font-style:italic;font-display:swap}
+@font-face{font-family:Avenir;src:url('assets/fonts/Avenir-Black.otf') format('opentype');font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:Avenir;src:url('assets/fonts/Avenir-BlackOblique.otf') format('opentype');font-weight:900;font-style:italic;font-display:swap}
+
+.materials-popup-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+.materials-popup-visible .materials-popup-trigger { color: #fff; }
+.materials-popup-trigger {
+  position: absolute;
+  left: 3518.709px;
+  top: 2857.4586px;
+  width: max-content;
+  height: 24px;
+  color: #a47442;
+  font: 20px/24px "AI-Avenir-Medium", Avenir, sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transform: rotate(45deg) translateY(-18px);
+  transform-origin: 0 0;
+  z-index: 3;
+  pointer-events: auto;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  backdrop-filter: none;
+}
+.map-mode .materials-popup-trigger { display: none; }
+
+.popup-layer { z-index: 1; }
+#content { z-index: 2; }
+#regions { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
+#regions .region { pointer-events: auto; }
+.map-popup-panel { position: absolute; inset: 0; }
+.map-popup-copy {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 18px 24px;
+  font: 11px/12.5px "AI-Avenir-Roman", Avenir, sans-serif;
+  color: white;
+  white-space: pre-line;
+  z-index: 2;
+}
+.materials-popup-copy {
+  padding: 16px 14px;
+  color: #a47442;
+  font-family: "AI-Avenir-Book", Avenir, sans-serif;
+}
+.portrait-popup-trigger {
+  position: absolute;
+  z-index: 3;
+  pointer-events: auto;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  backdrop-filter: none;
+}
+.map-mode .portrait-popup-trigger { display: none; }
+
+.materials-popup-copy p { margin: 0 0 3px; }
+.materials-popup-copy ul { margin: 0; padding-inline-start: 17px; list-style-position: outside; }
+.materials-popup-copy li { padding-inline-start: 2px; }
+
+.portrait-popup-panel .map-popup-copy {
+  line-height: 14px;
+  background: #727171;
+  border-radius: 15.78px;
+}
+@media (max-width: 650px) {
+  .portrait-popup-panel .materials-popup-art { display: none; }
+  .portrait-popup-panel .map-popup-copy { padding: 14px 16px; }
+  .portrait-popup-panel .map-popup-copy::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    border: 7px solid transparent;
+  }
+  .portrait-popup-panel .map-popup-copy[data-direction="right"]::before {
+    right: 100%;
+    border-right-color: #727171;
+  }
+  .portrait-popup-panel .map-popup-copy[data-direction="left"]::before {
+    left: 100%;
+    border-left-color: #727171;
+  }
+}
+
+.overview-art, .overview-labels { display: none; }
+.map-mode .overview-art, .map-mode .overview-labels { display: block; }
+.map-mode :is(.reading-background, .artwork-layer, .html-copy, .popup-layer) { display: none; }
+.overview-labels { position: absolute; inset: 0; pointer-events: none; }
+.overview-labels button {
+  position: absolute;
+  transform: translateY(-50%);
+  max-width: 140px;
+  padding: 2px 3px;
+  border: 0;
+  background: #e6e2db;
+  color: #0a6562;
+  font-size: 11px;
+  line-height: 1.2;
+  text-align: left;
+  pointer-events: auto;
+}
+.overview-labels button:hover { text-decoration: underline; }
+@media (max-width: 650px) {
+  .overview-labels button { max-width: 102px; font-size: 10px; }
+}
+
+
+/* The diagram rectangle sits fully inside the angled white frame. */
+.technique-diagram {
+  position: absolute;
+  left: 2886px;
+  top: 8460.3896px;
+  width: 266px;
+  height: 364px;
+  object-fit: contain;
+}
+.technique-controls {
+  position: absolute;
+  left: 3366px;
+  top: 8750.3896px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0a6562;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.technique-controls button {
+  pointer-events: auto;
+  border: 1px solid #0a6562;
+  background: white;
+  color: inherit;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.article-trigger {
+  position: absolute;
+  left: 3878.53px;
+  top: 7623.2596px;
+  width: 406px;
+  height: 619.44px;
+  pointer-events: auto;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  backdrop-filter: none;
+}
+.map-mode .article-trigger { display: none; }
+.article-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  background: rgb(198 193 189 / 85%);
+  pointer-events: none;
+}
+.article-overlay img, .article-reader { position: absolute; }
+.article-reader.body-copy {
+  font-size: 11pt !important;
+  line-height: 13pt !important;
+}
+.article-reader {
+  color: #000;
+  font-family: "AI-Avenir-Book", Avenir, sans-serif;
+  overflow: auto;
+  overscroll-behavior: contain;
+  pointer-events: auto;
+  padding: 0 16px 16px;
+  scrollbar-width: thin;
+}
+.article-reader h2, .article-reader h3 { font-size: inherit; line-height: inherit; }
+.article-reader h2, .article-reader h3, .article-reader p { margin: 0 0 13pt; }
+@media (max-width: 699px) {
+  .article-reader { background: #d6d2cf; padding: 12px 16px; }
+}
+
+.article-reader h2:has(+ .article-bibliography) { margin-bottom: 0; }
+.article-reader .article-bibliography { line-height: 11pt; margin-bottom: 4pt; }
+
+.materials-popup-art { height: 13247.62px; }
+
+.section-copy-panel {
+  position: absolute;
+  pointer-events: auto;
+  user-select: text;
+  touch-action: pan-y;
+  color: #fff;
+  font-family: "AI-Avenir-Book", Avenir, sans-serif;
+  font-size: calc(14px * var(--copy-scale, 1));
+  line-height: calc(16px * var(--copy-scale, 1));
+  overflow-wrap: anywhere;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.section-copy-panel p { margin: 0 0 1lh; }
+.section-copy-panel p:last-child { margin-bottom: 0; }
+.map-mode .section-copy-panel { display: none; }
+
+.materials-body-copy {
+  max-height: 177px;
+}
+.materials-body-copy::before {
+  content: "";
+  float: left;
+  width: 140px;
+  height: var(--materials-wrap-height, 177px);
+  shape-outside: polygon(0 0, 140px 177px, 140px 100%, 0 100%);
+  shape-margin: 5px;
+}
+
+.bamboo-detail {
+  position: absolute;
+  pointer-events: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  backdrop-filter: none;
+  color: #000;
+  text-align: left;
+}
+.bamboo-detail {
+  left: 3464.32px;
+  top: 3006.5648px;
+  width: 621.28px;
+  height: 500.72px;
+}
+.mao-detail { clip-path: polygon(0 0, 100% 0, 100% 22%, 77% 40%, 43% 100%, 0 100%); }
+.kao-detail { clip-path: polygon(100% 22%, 100% 100%, 43% 100%, 77% 40%); }
+.bamboo-detail-label {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+  color: #000;
+  font: calc(14px * var(--copy-scale, 1))/calc(16px * var(--copy-scale, 1)) "AI-Avenir-Book", Avenir, sans-serif;
+}
+.bamboo-detail:is(:hover, :focus-visible, [aria-pressed="true"]) + .bamboo-detail-label {
+  visibility: visible;
+}
+.mao-detail-label { left: 3490px; top: 3105px; width: 104px; }
+.kao-detail-label { left: 4088px; top: 3211px; width: 110px; }
+
+.section-copy-panel {
+  scrollbar-color: #65615d #d6d2cf;
+}
+.section-copy-panel::-webkit-scrollbar { width: 8px; }
+.section-copy-panel::-webkit-scrollbar-track { background: #d6d2cf; }
+.section-copy-panel::-webkit-scrollbar-thumb { background: #65615d; }
+
+/* Screen-sized body copy, compensated for the map camera scale. */
+#world {
+  --body-font-size: 15px;
+  --body-leading: 18px;
+}
+.section-copy-panel,
+.materials-popup-copy {
+  font-family: "AI-Avenir-Book", Avenir, sans-serif;
+  font-size: calc(var(--body-font-size) * var(--copy-scale, 1));
+  line-height: calc(var(--body-leading) * var(--copy-scale, 1));
+}
+.materials-popup-copy {
+  background: #fff;
+  padding: calc(16px * var(--copy-scale, 1)) calc(14px * var(--copy-scale, 1));
+  overflow-wrap: anywhere;
+}
+.materials-popup-copy ul {
+  padding-inline-start: calc(17px * var(--copy-scale, 1));
+}
+.materials-popup-copy li {
+  padding-inline-start: calc(2px * var(--copy-scale, 1));
+}
+@media (max-width: 650px) {
+  #world {
+    --body-font-size: 13px;
+    --body-leading: 16px;
+  }
+}
+
+.bamboo-detail-label {
+  font-family: "AI-Avenir-Heavy", Avenir, sans-serif;
+  width: calc(130px * var(--copy-scale, 1));
+}
+.mao-detail-label {
+  left: calc(3464.32px - 8px * var(--copy-scale, 1));
+  top: 3245px;
+  transform: translateX(-100%);
+  text-align: right;
+}
+.kao-detail-label {
+  left: calc(4085.6px + 8px * var(--copy-scale, 1));
+  top: 3211px;
+}
+
+@media (min-width: 651px) {
+  .section-copy-panel {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible;
+  }
+}
+
+/* Portrait copy stays at the same screen size as the other body columns. */
+.portrait-caption {
+  position:absolute;
+  width:calc(min(160px, 32vw) * var(--copy-scale, 1));
+  font:calc(var(--body-font-size) * var(--copy-scale, 1))/calc(var(--body-leading) * var(--copy-scale, 1)) "AI-Avenir-Book", Avenir, sans-serif;
+  color:white;
+  pointer-events:auto;
+  user-select:text;
+}
+.portrait-caption strong {font-family:"AI-Avenir-Heavy", Avenir, sans-serif;color:#0a6562;font-weight:400;}
+.portrait-caption p {margin:0;}
+.portrait-popup-panel .materials-popup-art {display:none;}
+.portrait-popup-panel .map-popup-copy {
+  font:calc(var(--body-font-size) * var(--copy-scale, 1))/calc(var(--body-leading) * var(--copy-scale, 1)) "AI-Avenir-Book", Avenir, sans-serif;
+  padding:calc(16px * var(--copy-scale, 1));
+  border-radius:calc(16px * var(--copy-scale, 1));
+  overflow:auto;
+  overflow-wrap:anywhere;
+  pointer-events:auto;
+  user-select:text;
+}
+@media(max-width:650px){#world[data-active-section="10"] .section-copy-panel{visibility:hidden}.portrait-caption{width:calc(min(160px,42vw) * var(--copy-scale,1));}}
+
+.portrait-popup-panel .map-popup-copy {height:auto;max-height:none;overflow:visible;}
+
+/* Page 5 copy ends at the bottom edge of the adjacent image. */
+.section-copy-panel[aria-label="Beyond the facade body text"] {
+  max-height: 932.6996px !important;
+  overflow: auto;
+}
+
+[aria-label="The three types body text"][hidden] {display:none!important;}
+.type-image-title {
+ position:absolute;width:440px;transform:rotate(45deg);transform-origin:0 0;
+ font:calc(var(--body-font-size) * var(--copy-scale,1))/calc(var(--body-leading) * var(--copy-scale,1)) "AI-Avenir-Medium",Avenir,sans-serif;
+ color:#0a6562;pointer-events:none;
+}
+.type-image-hover {
+ position:absolute;pointer-events:auto;padding:0;border:0;background:transparent;backdrop-filter:none;
+ clip-path:polygon(0 0,100% 100%,0 100%);
+}
+.type-image-hover[aria-pressed="true"] {background:rgb(54 54 54 / 50%);}
+.type-description {
+ position:absolute;left:3220px;top:2055px;width:600px;max-height:240px;
+ overflow:auto;pointer-events:auto;user-select:text;color:white;
+ font:calc(var(--body-font-size) * var(--copy-scale,1))/calc(var(--body-leading) * var(--copy-scale,1)) "AI-Avenir-Book",Avenir,sans-serif;
+}
+
+/* Technique columns follow the marked boxes; overflow stays inside them. */
+.section-copy-panel[aria-label="The techniques body text"] {
+  max-height:680px !important;
+  overflow:auto;
+}
+.section-copy-panel[aria-label="The techniques practice text"] {
+  max-height:140px !important;
+  overflow:auto;
+}
+/* Hover descriptions sit within the lower-left area of each triangular image. */
+.type-description {
+ width:165px;max-height:110px;z-index:5;
+ overflow:auto;overscroll-behavior:contain;touch-action:pan-y;
+}
+
+/* Each image title has its own column and remains screen-sized. */
+.type-image-title {
+ width:322.3px;transform:none;overflow-wrap:normal;
+ padding:0 4px;color:#0a6562;
+ font-size:calc(var(--body-font-size) * var(--copy-scale,1));
+ line-height:calc(var(--body-leading) * var(--copy-scale,1));
+}
+.materials-popup-trigger {
+ font-size:calc(20px * var(--copy-scale,1));
+ line-height:calc(24px * var(--copy-scale,1));
+ height:auto;
+}
+@media(max-width:650px) {
+ .materials-popup-trigger {
+   font-size:calc(15px * var(--copy-scale,1));
+   line-height:calc(18px * var(--copy-scale,1));
+   white-space:normal;width:calc(180px * var(--copy-scale,1));
+ }
+ .materials-popup-copy {
+   padding:calc(10px * var(--copy-scale,1));
+   font-size:calc(13px * var(--copy-scale,1));
+   line-height:calc(16px * var(--copy-scale,1));
+ }
+}
+
+/* Page 4: keep the paragraph inside the construction image on every screen. */
+.section-copy-panel[aria-label="Between construction and the walker body text"] {
+  max-height:598.7224px !important;
+  overflow:auto !important;
+  overscroll-behavior:contain;
+  touch-action:pan-y;
+}
+.opening-view {position:fixed;inset:0;z-index:6;overflow:hidden;background:#c6c1bd;touch-action:none;transition:transform .9s cubic-bezier(.65,0,.35,1);}
+.opening-view.leaving {transform:translateY(-100%);pointer-events:none;}
+.opening-stage {position:absolute;width:9585.61px;height:3300px;overflow:hidden;transform-origin:0 0;}
+.opening-stage>img {position:absolute;inset:0;width:9585.61px;height:15795.67px;pointer-events:none;}
+.opening-word {position:absolute;font:36px/1 "AI-Avenir-Black",Avenir,sans-serif;white-space:pre;transform-origin:0 0;translate:0 -29px;user-select:text;}
+.opening-word.vertical {writing-mode:vertical-rl;text-orientation:sideways;translate:-18px 0;}
+.opening-continue {position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font:13px/1.4 Avenir,sans-serif;color:#0a6562;opacity:0;transition:opacity .4s;}
+.opening-view[data-ready="true"] .opening-continue {opacity:1;}
+@media(prefers-reduced-motion:reduce){.opening-view{transition-duration:.1s;}}
+
+/* Diagram controls retain their screen size when the map camera shrinks. */
+.technique-controls {
+  left:3466px;
+  top:calc(8790px - 12px * var(--copy-scale,1));
+  transform:translate(-100%,-100%);
+  gap:calc(8px * var(--copy-scale,1));
+  font-size:calc(13px * var(--copy-scale,1));
+  line-height:calc(18px * var(--copy-scale,1));
+}
+.technique-controls button {
+  display:grid;
+  place-items:center;
+  width:calc(40px * var(--copy-scale,1));
+  height:calc(40px * var(--copy-scale,1));
+  padding:0;
+  font-size:calc(22px * var(--copy-scale,1));
+  line-height:1;
+  border-width:calc(1px * var(--copy-scale,1));
+}
+.opening-stage {height:4400px;}
+
+header .site-logo {display:block;width:92px;height:auto;} 
+
+.opening-continue {
+  background:transparent;
+  border:0;
+  backdrop-filter:none;
+  padding:8px;
+  font-size:22px;
+  line-height:1;
+}
+/* Navigation fades in during the final part of the opening. */
+.opening-active > :is(header,footer,#index) {
+ z-index:7;
+ opacity:var(--opening-ui-progress,0);
+}
+.opening-active > :is(header,footer,#index):not(:focus-within) {
+ transition:opacity .15s linear;
+}
+
+.opening-continue {bottom:76px;}

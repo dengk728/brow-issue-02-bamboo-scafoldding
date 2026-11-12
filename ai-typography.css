@@ -1,0 +1,11 @@
+@font-face{font-family:"AI-Avenir-Black";src:url("assets/fonts/Avenir-Black.otf") format("opentype");font-display:block}
+@font-face{font-family:"AI-Avenir-Book";src:url("assets/fonts/Avenir-Book.otf") format("opentype");font-display:block}
+@font-face{font-family:"AI-Avenir-Heavy";src:url("assets/fonts/Avenir-Heavy.otf") format("opentype");font-display:block}
+@font-face{font-family:"AI-Avenir-HeavyOblique";src:url("assets/fonts/Avenir-HeavyOblique.otf") format("opentype");font-display:block}
+@font-face{font-family:"AI-Avenir-Medium";src:url("assets/fonts/Avenir-Medium.otf") format("opentype");font-display:block}
+@font-face{font-family:"AI-Avenir-MediumOblique";src:url("assets/fonts/Avenir-MediumOblique.otf") format("opentype");font-display:block}
+@font-face{font-family:"AI-Avenir-Roman";src:url("assets/fonts/Avenir-Roman.otf") format("opentype");font-display:block}
+@font-face{font-family:"AI-DMSerifDisplay-Regular";src:url("assets/fonts/DMSerifDisplay-Regular.ttf") format("truetype");font-display:block}
+.ai-word{position:absolute;transform-origin:0 0;white-space:pre;pointer-events:auto;user-select:text;cursor:text;line-height:1;font-weight:400;font-style:normal}.ai-word>span{display:block;position:relative;top:calc(-1px * var(--baseline-offset,8));}
+.outline-line{position:absolute;line-height:1;white-space:normal;pointer-events:auto;user-select:text;cursor:text;font-weight:400;text-align:justify}
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="placeholder_refined" data-name="placeholder refined" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9585.61 13695.5708">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .79px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: .77px;
+      }
+
+      .cls-3 {
+        stroke-width: .76px;
+      }
+
+      .cls-4 {
+        stroke-width: 1.11px;
+      }
+
+      .cls-5 {
+        stroke-width: .68px;
+      }
+
+      .cls-6 {
+        stroke-width: .62px;
+      }
+
+      .cls-7 {
+        stroke-width: .93px;
+      }
+
+      .cls-8 {
+        stroke-width: .91px;
+      }
+
+      .cls-9 {
+        stroke-width: 1.31px;
+      }
+
+      .cls-10 {
+        stroke-width: 1.53px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-8" x="3102.04" y="2027.464" width="1194.82" height="775.19"/>
+  <rect class="cls-6" x="3595.78" y="978.89" width="555.38" height="775.19"/>
+  <rect class="cls-7" x="3202.22" y="2804.9148" width="1194.82" height="809.43"/>
+  <rect class="cls-9" x="3202.22" y="3614.3348" width="1384.3" height="1384.3"/>
+  <rect class="cls-5" x="4267.25" y="5151.2028" width="878.95" height="588.43"/>
+  <rect class="cls-3" x="4267.25" y="6169.2424" width="993.61" height="643.48"/>
+  <rect class="cls-4" x="3697.05" y="6903.6296" width="993.61" height="1388.25"/>
+  <rect class="cls-1" x="2779.09" y="8367.4096" width="852.99" height="814.8"/>
+  <rect class="cls-2" x="4120.72" y="9139.2216" width="938.84" height="708.76"/>
+  <rect class="cls-10" x="4142.47" y="10075.7608" width="1465.85" height="1776.35"/>
+</svg>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg id="pop_up" data-name="pop up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9585.61 13247.62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #727171;
+      }
+
+      .cls-2 {
+        fill: #a47442;
+      }
+
+      .cls-3 {
+        font-family: Avenir-Roman, Avenir;
+        font-size: 10px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.11em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <polyline class="cls-1" points="5179.5 10521.93 5150.84 10561.23 5206.27 10561.23 5179.5 10521.93" />
+      <rect class="cls-1" x="5178.67" y="10388.68" width="268.66" height="172.55" rx="15.78" ry="15.78" />
+    </g>
+  </g>
+</svg>

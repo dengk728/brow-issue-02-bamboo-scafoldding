@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg id="pop_up" data-name="pop up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9585.61 13247.62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #727171;
+      }
+
+      .cls-2 {
+        fill: #a47442;
+      }
+
+      .cls-3 {
+        font-family: Avenir-Roman, Avenir;
+        font-size: 10px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.11em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g>
+    <g id="pop_up-2" data-name="pop up">
+      <g>
+        <rect class="cls-4" x="3562.64" y="2965.26" width="13.3" height="140.4" transform="translate(-1100.97 3412.94) rotate(-45)" />
+        <rect class="cls-4" x="3639.72" y="2825.77" width="13.3" height="197.13" transform="translate(-999.82 3434.89) rotate(-45)" />
+        <rect class="cls-4" x="3454.85" y="2913.55" width="180" height="9" />
+        <rect class="cls-4" x="3527.38" y="3030.25" width="180" height="9" />
+      </g>
+    </g>
+    <g>
+    </g>
+  </g>
+</svg>
